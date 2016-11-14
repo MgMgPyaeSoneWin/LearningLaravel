@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+   return view('tasks');
+});
+
+/**
+ * Add a new Task
+ */
+Route::post('/task',function (Request $request) {
+
+});
+
+/*
+ * Delete An Existing Task
+ */
+Route::delete('/task/{id}', function ($id) {
+
+});
